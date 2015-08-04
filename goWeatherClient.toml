@@ -1,0 +1,7 @@
+debug = true
+
+[device]
+name = "/sys/bus/w1/devices/28-0004441c5fff/w1_slave"
+
+[server]
+url = "http://localhost:8080/api/v1/temperature"
