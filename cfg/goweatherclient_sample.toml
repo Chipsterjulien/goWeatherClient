@@ -1,0 +1,9 @@
+# logtype can take: debug, info, notice, warning, error, critical
+# warning is the default
+logtype = "warning"
+
+[device]
+name = ""
+
+[server]
+url = ""

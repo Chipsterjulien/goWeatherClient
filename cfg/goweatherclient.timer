@@ -1,0 +1,12 @@
+[Unit]
+Description=A client for goweatherserver who send temperature in json via tcp
+
+[Timer]
+# start as soon as possible the first time if true (after reboot for example)
+Persistent=false
+OnBootSec=0s
+OnCalendar=*:0/10
+Unit=goweatherclient.service
+
+[Install]
+WantedBy=default.target

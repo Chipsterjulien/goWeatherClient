@@ -1,0 +1,13 @@
+[Unit]
+Description=A client for goweatherserver who get and send temperature in json via tcp
+After=network.target
+Wants=goweatherclient.timer
+
+[Service]
+Type=oneshot
+user=goweatherclient
+group=goweatherclient
+ExecStart=/usr/bin/goweatherclient
+
+[Install]
+WantedBy=multi-user.target
